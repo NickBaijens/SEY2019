@@ -1,9 +1,4 @@
 class Key:
-    def __init__(self, _keyCode):
+    def __init__(self, _keyCode, _label):
         self.keyCode = _keyCode
-    
-    def openDoor(self, door):
-        if(self.keyCode == door.unlockCode):
-            return True
-        else:
-            return False
+        self.label = _label
